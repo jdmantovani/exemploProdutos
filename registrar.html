@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pratica 2</title>
+</head>
+<body>
+
+    <header>
+        <section class="paginas">
+            <img src="imagens/logo.png" alt="logo" id="logo">
+        <ul class="listaPaginas">
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="tablest.html">Tablets</a></li>
+            <li><a href="computadores.html">Computadores</a></li>
+        </ul>
+        <ul class="listaLogin">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registrar.html">Registrar</a></li>
+        </ul>
+        </section>
+    </header>
+
+    <nav class="formulario">
+            <div class="bemVindo">
+                <h1>Registrar</h1>
+            </div>
+            <div class="divFormulario">
+               <form>
+                <ul>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+                    </li>
+                    <br><br>
+                    <li> 
+                            <label for="email" id="labelEmail">Email</label>
+                            <input type="email" required placeholder="email@email.com">
+                    </li>
+                    <br><br>
+                    <li>
+                            <label for="password">Senha</label>
+                            <input type="password" required placeholder="senha">
+                    </li>
+                    <br><br>
+
+                    <li>
+                            <label for="paisOrigem">País de nascimento</label>
+                            <select name="paisorigem" required>
+                                <option selected disabled>Selecione um país</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="angola">Angola</option>
+                                <option value="canada">Canada</option>
+                            </select>   
+                    </li>
+                    <br><br>
+                    <li>
+                        <label for="genero">Gênero</label>
+                        <label for="masc"><input type="radio" name="masc" id="masc" value="masc">Masclino</label>
+                        <label for="fem"><input type="radio" name="fem" id="fem" value="fem">Feminino</label>
+                        <label for="indefinido"><input type="radio" name="indefinido" id="indefinido" value="indefinido">Prefiro não dizer</label>
+                    </li>
+                    <br><br>
+                    <li>
+                    <label for="hobbies">Hobbies</label>
+                    <label for="guitarra"><input type="checkbox" name="hobbies"id="guitarra" value="guitarra">Guitarra</label>
+                    <label for="futebol"><input type="checkbox" name="hobbies" id="futebol" value="futebol">Futebol</label>
+                    <label for="tenis"><input type="checkbox" name="hobbies" id="tenis"  value="tenis">Tenis</label>
+                    <label for="programacao"><input type="checkbox" name="hobbies" id="programacao" value="programacao">Programação</label>
+                    </li>
+                    <br><br>
+                    <li>
+                        <label for="comentarios">Comentários</label><br>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    </li>
+                    <br><br>
+                    <li>
+                            <label for="aceitoTermos"></label>
+                            <label for="aceitoTermos"><input type="radio" name="aceitoTermos" id="aceitoTermos" value="aceitoTermos" required>Aceito termos e condições</label><br>
+                    </li>
+
+
+                    <br><br>
+                
+                </ul>
+                <input type="button" value="Registrar" class="botaoCancelar">
+                <button type="submit" class="botaoCancelar">Cancelar</button>
+       
+                </form>
+            </div>
+                
+        </nav>            
+
+
+</body>
+</html>
